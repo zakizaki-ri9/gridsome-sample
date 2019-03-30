@@ -1,12 +1,44 @@
-# Default starter for Gridsome
+# Gridsomeを用いたサンプル
 
-### 1. Install Gridsome CLI tool if you don't have
+## GridsomeCLIのインストール
 
-`npm install --global @gridsome/cli`
+```bash
+# npm
+npm install --global @gridsome/cli
 
-### 2. Create a Gridsome project
+# yarn
+yarn global add @gridsome/cli
+```
+## プロジェクトの作成
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+```bash
+gridsome create gridsome-site {starter-kit}
+```
+
+{starter-kit}には雛形となるスターターキットの名前を指定する
+
+
+## 起動
+
+```bash
+gridsome develop
+```
+
+## pluginのインストール
+
+### pug
+
+[gridsome-plugin-pug](https://github.com/gluons/gridsome-plugin-pug)を使用する。
+
+```bash
+yarn add -D pug gridsome-plugin-pug
+```
+
+```js
+// gridsome.config.js
+module.exports = {
+ 	plugins: [
+		'gridsome-plugin-pug' // add
+	]
+}
+```
