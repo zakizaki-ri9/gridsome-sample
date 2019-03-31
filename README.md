@@ -42,3 +42,21 @@ module.exports = {
 	]
 }
 ```
+
+### BootstrapVue
+
+[公式リファレンスのbootstrapvueの部分](https://gridsome.org/docs/assets-css/#bootstrapvue)参照。
+
+```bash
+yarn add bootstrap-vue bootstrap
+```
+
+```js
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+export default function (Vue, { router, head, isClient }) {
+  Vue.use(BootstrapVue)
+}
+```
