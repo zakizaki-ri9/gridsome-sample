@@ -3,11 +3,21 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import BootstrapVue from 'bootstrap-vue'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+library.add(fas, far, fab)
+
 export default function (Vue, { router, head, isClient }) {
+  // BootstrapVueの使用
   Vue.use(BootstrapVue)
-  // Set default layout as a global component
+  // FontAwesomeの使用
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
+
   Vue.component('Layout', DefaultLayout)
 }

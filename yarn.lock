@@ -592,6 +592,38 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@fortawesome/fontawesome-common-types@^0.2.17":
+  version "0.2.17"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.17.tgz#d8c36e6f6f3b3415fa1f83eaffe4f41bd313715c"
+
+"@fortawesome/fontawesome-svg-core@^1.2.17":
+  version "1.2.17"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.17.tgz#8fce4402e824ebe99a04b1949d56d696eeae2e6d"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.17"
+
+"@fortawesome/free-brands-svg-icons@^5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.8.1.tgz#8f188a4699adb31e505abca64740d7046222b9a1"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.17"
+
+"@fortawesome/free-regular-svg-icons@^5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-5.8.1.tgz#9477a973fe3f681f871375fa95ff32a87dcb5111"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.17"
+
+"@fortawesome/free-solid-svg-icons@^5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.8.1.tgz#086c70f95b34a4bcf6f50ff1078d46e53486eb52"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.17"
+
+"@fortawesome/vue-fontawesome@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.6.tgz#18a0f4263b90f65180fc927325ba01896276ea04"
+
 "@gridsome/cli@^0.0.9":
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.0.9.tgz#8adc7b6c809dc85e5993bc496f2c6ee42930ad7c"
@@ -6437,7 +6469,13 @@ svg-tags@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
 
-svgo@^1.0.0:
+svg-to-vue@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/svg-to-vue/-/svg-to-vue-0.4.0.tgz#93a2fc9658c09593f6099ac7f5ded73ac83dc549"
+  dependencies:
+    svgo "^1.1.1"
+
+svgo@^1.0.0, svgo@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.2.0.tgz#305a8fc0f4f9710828c65039bb93d5793225ffc3"
   dependencies:
@@ -6938,6 +6976,13 @@ vue-style-loader@^4.1.0:
   dependencies:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
+
+vue-svg-loader@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/vue-svg-loader/-/vue-svg-loader-0.12.0.tgz#5ea97d021edd3023236b92f96c3aba433b5d428b"
+  dependencies:
+    loader-utils "^1.2.3"
+    svg-to-vue "^0.4.0"
 
 vue-template-compiler@^2.6.6:
   version "2.6.10"

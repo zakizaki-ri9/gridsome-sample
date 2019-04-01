@@ -45,7 +45,7 @@ module.exports = {
 
 ### BootstrapVue
 
-[公式リファレンスのbootstrapvueの部分](https://gridsome.org/docs/assets-css/#bootstrapvue)参照。
+[公式リファレンスのBootstrapVueの部分](https://gridsome.org/docs/assets-css/#bootstrapvue)参照。
 
 ```bash
 yarn add bootstrap-vue bootstrap
@@ -57,6 +57,34 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default function (Vue, { router, head, isClient }) {
-  Vue.use(BootstrapVue)
+  Vue.use(BootstrapVue) // add
 }
+```
+
+### FontAwesome(SVG)
+
+```bash
+yarn add @fortawesome/vue-fontawesome
+yarn add @fortawesome/fontawesome-svg-core
+yarn add @fortawesome/free-brands-svg-icons
+yarn add @fortawesome/free-regular-svg-icons
+```
+
+```js
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+
+library.add(fas, far, fab)
+
+export default function (Vue, { router, head, isClient }) {
+  Vue.component('font-awesome-icon', FontAwesomeIcon) // add
+}
+```
+
+```pug
+//- i.fa.fa-user
+font-awesome-icon(:icon="['fa', 'user']") 
 ```

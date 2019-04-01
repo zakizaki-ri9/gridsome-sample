@@ -15,17 +15,21 @@
             .dropdown
               ul#nav.nav
                 li.menu-item
-                  g-link.smothscroll(href='#about', title='About')
-                    i.fa.fa-user
+                  a.smothscroll(href='#about', title='About')
+                    //- i.fa.fa-user
+                    font-awesome-icon(:icon="['fa', 'user']") 
                 li.menu-item
                   a.smothscroll(href='#resume', title='Resume')
-                    i.fa.fa-file-text-o
+                    //- i.fa.fa-file-text-o
+                    font-awesome-icon(:icon="['fa', 'file-alt']") 
                 li.menu-item
                   a.smothscroll(href='#work', title='Works')
-                    i.fa.fa-briefcase
+                    //- i.fa.fa-briefcase
+                    font-awesome-icon(:icon="['fa', 'briefcase']") 
                 li.menu-item
                   a.smothscroll(href='#contact', title='Contact')
-                    i.fa.fa-envelope
+                    //- i.fa.fa-envelope
+                    font-awesome-icon(:icon="['fa', 'envelope']") 
               .clear
           .clear
     #headerwrap
@@ -45,10 +49,10 @@
                 | I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like
                 | branding, icon design or web development.
             .col-lg-3
-              p
+              p.small
                 a(href='#')
                   i.icon-file
-                sm DOWNLOAD PDF
+                | DOWNLOAD PDF
     section#resume(name='resume')
       .container.desc
         .row
@@ -56,27 +60,25 @@
             h5 EDUCATION
           .col-lg-6
             p
-              t Master of Web Design
+              b Master of Web Design
               br
               |  St. Patrick University 
               br
               i 3 Years Course
           .col-lg-3
-            p
-              sm GRADUATING IN MAY 2014
+            p.small GRADUATING IN MAY 2014
               br
-              imp
-                sm IN PROGRESS
+              .imp
+                | IN PROGRESS
           .col-lg-6.col-lg-offset-3
             p
-              t Degree of Web Developer
+              b Degree of Web Developer
               br
               |  Hastings University 
               br
               i 2 Years Course
           .col-lg-3
-            p
-              sm JUNE 2012
+            p.small JUNE 2012
         br
         hr
     .container.desc
@@ -85,28 +87,26 @@
           h5 WORK
         .col-lg-6
           p
-            t Front-end Developer
+            b Front-end Developer
             br
             |  Example Corp. 
             br
           p
-            more
+            .more
               | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         .col-lg-3
-          p
-            sm AUGUST 2012 - CURRENT
+          p.small AUGUST 2012 - CURRENT
         .col-lg-6.col-lg-offset-3
           p
-            t Web Designer - Intern
+            b Web Designer - Intern
             br
             |  Onassis Ltd. 
             br
           p
-            more
+            .more
               | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         .col-lg-3
-          p
-            sm JUNE 2010 - JULY 2012
+          p.small JUNE 2010 - JULY 2012
       br
       hr
     .container.desc
@@ -115,24 +115,22 @@
           h5 AWARDS
         .col-lg-6
           p
-            t Best Web Design
+            b Best Web Design
             br
             |  Example Site 
             br
         .col-lg-3
-          p
-            sm NOVEMBER 2013
+          p.small NOVEMBER 2013
         .col-lg-6.col-lg-offset-3
           p
-            t Designer of the Year
+            b Designer of the Year
             br
             |  Awwwards Site
           p
-            more
+            .more
               | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         .col-lg-3
-          p
-            sm 2013
+          p.small 2013
       br
     #skillswrap
       .container
@@ -174,40 +172,37 @@
               img.img-responsive(src='../img/port01.jpg', alt='')
           .col-lg-3
             p CANALS OF ENGLAND
-            p
-              more
+            p.small
+              .more
                 | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 br
                 br
-                sm
-                  i.icon-tag
-                  |  design
+                i.icon-tag
+                |  design
           .col-lg-6.col-lg-offset-3
             p
               img.img-responsive(src='../img/port02.jpg', alt='')
           .col-lg-3
             p SANKEY
-            p
-              more
+            p.small
+              .more
                 | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 br
                 br
-                sm
-                  i.icon-tag
-                  |  front-end
+                i.icon-tag
+                |  front-end
           .col-lg-6.col-lg-offset-3
             p
               img.img-responsive(src='../img/port03.jpg', alt='')
           .col-lg-3
             p WE GROW
-            p
-              more
+            p.small
+              .more
                 | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 br
                 br
-                sm
-                  i.icon-tag
-                  |  web design
+                i.icon-tag
+                |  web design
         br
         br
     section#contact(name='contact')
@@ -218,12 +213,12 @@
               h5 CONTACT
             .col-lg-4
               p
-                t Email
+                b Email
                 br
                 |  contact@example.com 
                 br
               p
-                t Adress
+                b Adress
                 br
                 |  Some Ave. 987 
                 br
@@ -232,12 +227,12 @@
                 |  London, England. 
                 br
               p
-                t Phone
+                b Phone
                 br
                 |  +55 8933-2383 
                 br
               p
-                t Social Links
+                b Social Links
                 br
                 a(href='#')
                   i.fa.fa-dribbble
@@ -250,8 +245,7 @@
                 a(href='#')
                   i.fa.fa-apple
             .col-lg-6
-              p
-                sm CONTACT FORM
+              p.small CONTACT FORM
               form.contact-form.php-mail-form(role='form', action='', method='POST')
                 .form-group
                   label(for='contact-name') Your Name
@@ -292,6 +286,19 @@ query {
   }
 }
 </static-query>
+
+<script>
+export default {
+  metaInfo: {
+    bodyAttrs: {
+      dataSpy: 'scroll',
+      dataOffset: '64',
+      dataTarget: '#section-topbar'
+    }
+  }
+}
+</script>
+
 
 <style>
 /* body {
@@ -471,7 +478,7 @@ SECTION WRAPS
 
 #headerwrap {
   background: url(../img/header-bg.jpg) no-repeat center top;
-  margin-top: 60px;
+  margin-top: 54px;
   padding-top: 140px;
   text-align: center;
   background-attachment: relative;
@@ -580,23 +587,20 @@ SECTION WRAPS
   color: #2f2f2f;
 }
 
-.desc t {
+
+.desc b {
   color: #34495e;
   font-weight: 700;
 }
 
-.desc imp {
+.desc .imp {
   padding: 6px;
   color: white;
   background: #34495e;
 }
 
-.desc more {
+.desc .more {
   color: #95a5a6;
-}
-
-sm {
-  font-size: 12px;
 }
 
 /* Contact Form */
