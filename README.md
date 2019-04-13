@@ -66,6 +66,7 @@ export default function (Vue, { router, head, isClient }) {
 ```bash
 yarn add @fortawesome/vue-fontawesome
 yarn add @fortawesome/fontawesome-svg-core
+yarn add @fortawesome/free-solid-svg-icons
 yarn add @fortawesome/free-brands-svg-icons
 yarn add @fortawesome/free-regular-svg-icons
 ```
