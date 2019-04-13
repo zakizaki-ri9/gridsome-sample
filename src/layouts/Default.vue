@@ -1,282 +1,53 @@
 <template lang="pug">
-  //- .layout
-  //-   b-jumbotron(
-  //-     header="Gridsome"
-  //-   )
-  //-     nav.nav
-  //-       g-link.nav__link(to='/') Home
-  //-       g-link.nav__link(to='/about') About
-  //-     slot
   div
     #section-topbar
       #topbar-inner
-        .container
-          .row
-            .dropdown
+        b-container
+          b-row
+            .text-center
               ul#nav.nav
                 li.menu-item
-                  a.smothscroll(href='#about', title='About')
-                    //- i.fa.fa-user
-                    font-awesome-icon(:icon="['fa', 'user']") 
-                li.menu-item
-                  a.smothscroll(href='#resume', title='Resume')
-                    //- i.fa.fa-file-text-o
-                    font-awesome-icon(:icon="['fa', 'file-alt']") 
-                li.menu-item
-                  a.smothscroll(href='#work', title='Works')
-                    //- i.fa.fa-briefcase
-                    font-awesome-icon(:icon="['fa', 'briefcase']") 
-                li.menu-item
-                  a.smothscroll(href='#contact', title='Contact')
-                    //- i.fa.fa-envelope
-                    font-awesome-icon(:icon="['fa', 'envelope']") 
-              .clear
-          .clear
+                  a
+                    font-awesome-icon(
+                      :icon="['fab', 'instagram']"
+                      style="position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+                    )
     #headerwrap
-      .container
-        .row.centered
-          .col-lg-12
-            h1 William T. Kelvin
-            h3 Web Designer | contact@example.com
+      b-container
+        b-row.centered
+          b-col(lg="12")
+            h1 TRATTORIA e BAR PORTO
+            h3 
     section#about(name='about')
       #intro
-        .container
-          .row
-            .col-lg-2.col-lg-offset-1
+        b-container
+          b-row
+            b-col(
+              lg="2"
+              lg-offset="1"
+            )
               h5 ABOUT
-            .col-lg-6
+            b-col(
+              lg="6"
+            )
               p
-                | I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like
-                | branding, icon design or web development.
-            .col-lg-3
-              p.small
-                a(href='#')
-                  i.icon-file
-                | DOWNLOAD PDF
-    section#resume(name='resume')
-      .container.desc
-        .row
-          .col-lg-2.col-lg-offset-1
-            h5 EDUCATION
-          .col-lg-6
-            p
-              b Master of Web Design
-              br
-              |  St. Patrick University 
-              br
-              i 3 Years Course
-          .col-lg-3
-            p.small GRADUATING IN MAY 2014
-              br
-              .imp
-                | IN PROGRESS
-          .col-lg-6.col-lg-offset-3
-            p
-              b Degree of Web Developer
-              br
-              |  Hastings University 
-              br
-              i 2 Years Course
-          .col-lg-3
-            p.small JUNE 2012
-        br
-        hr
-    .container.desc
-      .row
-        .col-lg-2.col-lg-offset-1
-          h5 WORK
-        .col-lg-6
-          p
-            b Front-end Developer
-            br
-            |  Example Corp. 
-            br
-          p
-            .more
-              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        .col-lg-3
-          p.small AUGUST 2012 - CURRENT
-        .col-lg-6.col-lg-offset-3
-          p
-            b Web Designer - Intern
-            br
-            |  Onassis Ltd. 
-            br
-          p
-            .more
-              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        .col-lg-3
-          p.small JUNE 2010 - JULY 2012
-      br
-      hr
-    .container.desc
-      .row
-        .col-lg-2.col-lg-offset-1
-          h5 AWARDS
-        .col-lg-6
-          p
-            b Best Web Design
-            br
-            |  Example Site 
-            br
-        .col-lg-3
-          p.small NOVEMBER 2013
-        .col-lg-6.col-lg-offset-3
-          p
-            b Designer of the Year
-            br
-            |  Awwwards Site
-          p
-            .more
-              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        .col-lg-3
-          p.small 2013
-      br
-    #skillswrap
-      .container
-        .row
-          .col-lg-2.col-lg-offset-1
-            h5 SKILLS
-          .col-lg-3.centered
-            canvas#javascript(height='130', width='130')
-            p Javascript
-            br
-          .col-lg-3.centered
-            canvas#bootstrap(height='130', width='130')
-            p Bootstrap
-            br
-          .col-lg-3.centered
-            canvas#wordpress(height='130', width='130')
-            p Wordpress
-            br
-          .col-lg-3.col-lg-offset-3.centered
-            canvas#html(height='130', width='130')
-            p HTML/CSS
-            br
-          .col-lg-3.centered
-            canvas#photoshop(height='130', width='130')
-            p Photoshop
-            br
-          .col-lg-3.centered
-            canvas#illustrator(height='130', width='130')
-            p Illustrator
-            br
-        br
-    section#work(name='work')
-      .container.desc
-        .row
-          .col-lg-2.col-lg-offset-1
-            h5 PORTFOLIO
-          .col-lg-6
-            p
-              img.img-responsive(src='../img/port01.jpg', alt='')
-          .col-lg-3
-            p CANALS OF ENGLAND
-            p.small
-              .more
-                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                | 北イタリアの郷土料理のお店
                 br
+                | 5月初旬open予定
                 br
-                i.icon-tag
-                |  design
-          .col-lg-6.col-lg-offset-3
-            p
-              img.img-responsive(src='../img/port02.jpg', alt='')
-          .col-lg-3
-            p SANKEY
-            p.small
-              .more
-                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                | オープニングスタッフ募集中
                 br
+                | お問い合わせはTELかDMでお待ちしております
                 br
-                i.icon-tag
-                |  front-end
-          .col-lg-6.col-lg-offset-3
-            p
-              img.img-responsive(src='../img/port03.jpg', alt='')
-          .col-lg-3
-            p WE GROW
-            p.small
-              .more
-                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                | 山梨県笛吹市石和町井戸xxxx
                 br
-                br
-                i.icon-tag
-                |  web design
-        br
-        br
-    section#contact(name='contact')
-      #footwrap
-        .container
-          .row
-            .col-lg-2
-              h5 CONTACT
-            .col-lg-4
-              p
-                b Email
-                br
-                |  contact@example.com 
-                br
-              p
-                b Adress
-                br
-                |  Some Ave. 987 
-                br
-                |  Postal 23892 
-                br
-                |  London, England. 
-                br
-              p
-                b Phone
-                br
-                |  +55 8933-2383 
-                br
-              p
-                b Social Links
-                br
-                a(href='#')
-                  i.fa.fa-dribbble
-                a(href='#')
-                  i.fa.fa-twitter
-                a(href='#')
-                  i.fa.fa-facebook
-                a(href='#')
-                  i.fa.fa-linkedin
-                a(href='#')
-                  i.fa.fa-apple
-            .col-lg-6
-              p.small CONTACT FORM
-              form.contact-form.php-mail-form(role='form', action='', method='POST')
-                .form-group
-                  label(for='contact-name') Your Name
-                  input#contact-name.form-control(type='name', name='name', placeholder='Your Name', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
-                  .validate
-                .form-group
-                  label(for='contact-email') Your Email
-                  input#contact-email.form-control(type='email', name='email', placeholder='Your Email', data-rule='email', data-msg='Please enter a valid email')
-                  .validate
-                .form-group
-                  label(for='contact-subject') Subject
-                  input#contact-subject.form-control(type='text', name='subject', placeholder='Subject', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
-                  .validate
-                .form-group
-                  label(for='contact-message') Your Message
-                  textarea#contact-message.form-control(name='message', placeholder='Your Message', rows='5', data-rule='required', data-msg='Please write something for us')
-                  .validate
-                .loading
-                .error-message
-                .sent-message Your message has been sent. Thank you!
-                .form-send
-                  button.btn.btn-large(type='submit') Send Message
+                | xxx-xxx-xxxx
     #copyrights
-      .container
+      b-container
         p
           | © Copyrights 
-          strong Kelvin
+          strong @zucky_zakizaki
           | . All Rights Reserved
-        .credits
-          | Created with Kelvin template by 
-          a(href='https://templatemag.com/') TemplateMag
 </template>
 
 <static-query>
@@ -301,31 +72,6 @@ export default {
 
 
 <style>
-/* body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-} */
 body {
   background-color: #f2f2f2;
   font-family: "Lato";
@@ -477,8 +223,9 @@ SECTION WRAPS
 /* Header Wrap */
 
 #headerwrap {
-  background: url(../img/header-bg.jpg) no-repeat center top;
-  margin-top: 54px;
+  /* background: url(../img/header-bg.jpg) no-repeat center top; */
+  background: url(../img/top.jpg) no-repeat center top;
+  margin-top: 36px;
   padding-top: 140px;
   text-align: center;
   background-attachment: relative;
@@ -497,12 +244,12 @@ SECTION WRAPS
 
 #headerwrap h1 {
   font-size: 80px;
-  color: white;
+  color: rgb(250, 127, 127);
 }
 
 #headerwrap h3 {
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 /* Intnro Wrap */
